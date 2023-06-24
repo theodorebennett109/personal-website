@@ -14,3 +14,9 @@
 
 //TODO: import additional global CSS here.
 @import 'bulma';
+
+// .navbar-menu.is-active > .navbar-end > a.navbar-item:hover{
+//   color: black  !important;
+div > nav > div.navbar-menu.is-active > div.navbar-end > a:hover{
+  color: grey  !important;
+}

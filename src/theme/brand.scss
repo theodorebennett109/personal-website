@@ -19,6 +19,7 @@ body {
 	a {
 		font-family: $primary-font-family;
 		@apply underline;
+		color: black
 	}
 
 	li a {
