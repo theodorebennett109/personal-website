@@ -3,11 +3,20 @@ import Router from 'vue-router';
 
 // tslint:disable-next-line
 const { default: generatedRoutes } = require('../../.rdvue/routes.js');
+const HomePage = () => import(/* webpackChunkName: "home" */ '@/pages/home')
+const AboutPage = () => import(/* webpackChunkName: "about" */ '@/pages/about')
+const PortfolioPage = () => import(/* webpackChunkName: "portfolio" */ '@/pages/portfolio')
+const ContactPage = () => import(/* webpackChunkName: "contact" */ '@/pages/contact')
+const NotFoundPage = () => import(/* webpackChunkName: "not-found" */ '@/pages/not-found')
 
 Vue.use(Router);
 
 export enum Page {
   Hello = 'hello-world',
+  Home = 'home',
+  About = 'about',
+  Portfolio = 'portfolio',
+  Contact = 'contact',
   NotFound = 'not-found',
 }
 
@@ -23,14 +32,35 @@ export default new Router({
     ...generatedRoutes,
     {
       path: '/',
-      name: Page.Hello,
+      name: Page.Home,
       meta: {
         layout: 'default',
       },
-      component: () =>
-        import(
-          /* webpackChunkName: "hello-world" */
-          '@/pages/hello-world'),
+      component: HomePage
+    },
+    {
+      path: '/about',
+      name: Page.About,
+      meta: {
+        layout: 'default',
+      },
+      component: AboutPage
+    },
+    {
+      path: '/portfolio',
+      name: Page.Home,
+      meta: {
+        layout: 'default',
+      },
+      component: PortfolioPage
+    },
+    {
+      path: '/contact',
+      name: Page.Contact,
+      meta: {
+        layout: 'default',
+      },
+      component: ContactPage
     },
     {
       path: '*',
@@ -38,10 +68,7 @@ export default new Router({
       meta: {
         layout: 'default',
       },
-      component: () =>
-        import(
-          /* webpackChunkName: "not-found" */
-          '@/pages/not-found'),
+      component: NotFoundPage
     },
   ],
 });
