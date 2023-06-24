@@ -10,6 +10,7 @@ import 'buefy/dist/buefy.css'
 import i18n from '@/config/i18n';
 
 Vue.use(Buefy, {
+  defaultIconComponent: 'font-awesome-icon',
   defaultIconPack: 'fas',
 });
 

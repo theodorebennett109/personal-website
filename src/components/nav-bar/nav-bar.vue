@@ -43,6 +43,15 @@
         >
           <p>Contact</p></b-navbar-item
         >
+
+        <b-navbar-item
+          tag="a"
+          href="/resume.pdf"
+          target="_blank"
+          class="[ no-underline ]"
+        >
+          <p>Resume</p>
+        </b-navbar-item>
       </template>
     </b-navbar>
   </div>
