@@ -50,6 +50,10 @@ module.exports = {
         '7xl': '5rem',
         '8xl': '6rem',
       },
+      maxWidth: {
+        256: '256px',
+        200: '200px',
+      },
       screens: {
         sm: '640px',
         md: '768px',

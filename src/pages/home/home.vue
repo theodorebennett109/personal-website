@@ -2,10 +2,12 @@
 <script lang="ts" src="./home.ts"></script>
 <template>
   <div class="[ home ]">
-    <div class="[ flex ][ justify-center items-center ][ p-16 ]">
+    <div
+      class="[ flex lg:flex-row flex-col ][ justify-center items-center ][ p-16 ]"
+    >
       <div class="[ m-10 ]">
         <img
-          class="[ h-64 w-64 rounded-full ]"
+          class="[ max-w-256 rounded-full ]"
           src="@/assets/theo.jpg"
           alt=""
         />
