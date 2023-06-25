@@ -1,5 +1,8 @@
 # personal-website
 
+## Link to website
+[personalWebsite](https://theodorebennett109.github.io/theodorebennettwebsite/)
+
 ## Project setup
 
 ```
