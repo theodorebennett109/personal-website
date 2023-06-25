@@ -46,7 +46,7 @@
 
         <b-navbar-item
           tag="a"
-          href="/resume.pdf"
+          href="https://drive.google.com/file/d/188e4MQa4t_c69JrwhXloFuxRt3nTkm4h/view?usp=sharing"
           target="_blank"
           class="[ no-underline ]"
         >
